@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Lobster&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,body{
+font-family: 'Alegreya Sans', sans-serif;
+font-variant: normal;
+font-size: 14px;
+font-weight: 300;
+background: #F9F7F7;
+color: #06283D;
+min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+.container{
+ width: 100%;
+ 
+ .header{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 50px auto 0;
+  padding: 1rem;
+  border-bottom-width: 3px;
+  border-top-width: 0px;
+  border-style: solid;
+  border-image:linear-gradient(to right,rgba(0, 0, 0, 0), #1B2430 , rgba(0, 0, 0, 0)) 90% 1;
+
+  background: linear-gradient(90deg,#F9F7F7 1% ,rgba(255,255,255,1) 30% , rgba(255,255,255,1) 90%,#F9F7F7 100%);
+  .brand-title{
+   a{
+   font-size: 32px;
+   font-family: 'Lobster', cursive;
+   font-weight: 600;
+   color: #1B2430;
+   }
+  }
+  ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   li{
+    padding: 1rem;
+    list-style: none;
+    a {
+    display: flex;
+    align-items: center;
+    color: #3F4E4F;
+    font-size: 18px;
+    font-weight: 600;
+    &:hover , &:hover svg{
+    color: #777;
+    }
+    svg{
+     color: #3F4E4F;
+     margin-right: 5px;
+    }
+    }
+   }
+  }
+ }
+ section.heading{
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 50px 0;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+   line-height: 33px;
+   padding: 0 1rem;
+   font-size: 1em;
+   vertical-align: middle;
+   color: #1b2430d1;
+  }
+  h1{
+   line-height: 33px;
+   font-size: 33px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   svg{
+    margin-right: 15px;
+   }
+  }
+
+
+ }
+ .form{
+  width: 70%;
+  margin: 0 auto;
+  .form-group {
+  margin-bottom: 10px;
+  }
+  input{
+   font-family: 'Alegreya Sans', sans-serif;
+   width: 100%;
+   padding: 1rem 3rem;
+   margin-bottom: 10px;
+   border: 1px solid #e6e6e6;
+   border-radius: 4px;
+   font-size: 18px;
+   font-weight: 600;
+
+   &:focus{
+    outline: 3px solid #677172;
+   }
+   &::placeholder {
+   color: #7D9D9C;
+   font-weight: 600;
+   text-transform: capitalize;
+   padding: 0 1rem;
+   font-family: 'Alegreya Sans', sans-serif;
+   }
+  }
+  .btn{
+   font-family: 'Alegreya Sans', sans-serif;
+   background: none;
+   border: none;
+   outline: none;
+   background-color: #06283D;
+   padding: 10px 2rem;
+   border-radius: 4px;
+   font-weight: 600;
+   color: #e6e6e6;
+   font-size: 22px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+  }
+ }
+}
